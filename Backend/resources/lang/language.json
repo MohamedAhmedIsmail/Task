@@ -1,0 +1,58 @@
+{
+  "en": {
+    "message": {
+      "main":"Main",
+      "data_creation": "Basic Data",
+      "users": "Users",
+      "list": "list",
+      "language": "Language",
+      "name":"Name",
+      "email":"Email",
+      "phone":"Phone",
+      "addUser":"Add User",
+      "addAdmin":"Add Admin",
+      "requiredField":"Required Field",
+      "wrongemail":"Wrong Entered Email",
+      "password_confirmation":"Confirm Password",
+      "active_user": "Active User",
+      "all": "All",
+      "save": "Save",
+      "update": "Update",
+      "year": "Year",
+      "month": "Month",
+      "day": "Day",
+      "previous": "Previous",
+      "next": "Next",
+      "date": "Date",
+      "amount": "amount",
+      "amountBeforeTax": "Amount Before Tax",
+      "period": "From Date",
+      "from": "From Date",
+      "to": "To Date",
+      "admins": "Admins",
+      "categories": "Categories",
+        "movies": "Movies"
+    }
+  },
+  "ar": {
+    "message": {
+      "movies": "أفلام",
+      "categories": "التصنيفات",
+      "admins": "الادمن",
+      "done": "تم",
+      "comment": "التعليق",
+      "description": "الوصف",
+      "Add": "اضافة",
+      "edit": "تعديل",
+      "delete": "حذف",
+      "type": "النوع",
+      "created_at": "انشئ فى",
+      "updated_at": "تحدث فى",
+      "startDate": "تاريخ البداية",
+      "endDate": "تاريخ النهايه",
+      "date": "التاريخ",
+      "from": "من",
+      "to": "الى"
+    }
+  }
+}

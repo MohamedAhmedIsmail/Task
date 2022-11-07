@@ -1,0 +1,9 @@
+<nav class="navbar navbar-dark bg-dark justify-content-between ">
+<ul class="navbarCss">
+  <li><a routerLink="/login" *ngIf="!loggedIn">Login</a></li>
+  <li><a routerLink="/profile" *ngIf="loggedIn">Home</a></li>
+  <li><a routerLink="/categories" *ngIf="loggedIn">Categories</a></li>
+  <li><a href="#" (click)="logout($event)" *ngIf="loggedIn">Logout</a></li>
+</ul>
+</nav>
+

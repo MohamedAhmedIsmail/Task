@@ -1,0 +1,41 @@
+<div class="col-4 offset-2">
+  <div class="card">
+    <div class="card-header">Edit Movie</div>
+    <div class="card-body">
+
+      <form class="col-4" #movieForm=ngForm (ngSubmit)="onSubmit()">
+        <div class="alert alert-danger" [hidden]="!error">
+          {{error}}
+        </div>
+        <div class="row mb-3">
+          <label class="col-sm-2 col-form-label">Title</label>
+          <div class="col-sm-10">
+            <input type="text" name="title" class="form-control"  [(ngModel)]="form.title" required>
+          </div>
+        </div>
+        <div class="row mb-3">
+          <label class="col-sm-2 col-form-label">Category</label>
+          <div class="col-sm-10">
+            <select name="category_id" class="form-control" [(ngModel)]="form.category_id" required>
+              <option value="{{category.id}}" *ngFor="let category of categories">{{category.title}}</option>
+            </select>
+          </div>
+        </div>
+        <div class="row mb-3">
+          <label class="col-sm-2 col-form-label">Rate</label>
+          <div class="col-sm-10">
+            <input type="text" name="rate" class="form-control"  [(ngModel)]="form.rate" required>
+          </div>
+        </div>
+        <div class="row mb-3">
+          <label class="col-sm-2 col-form-label">description</label>
+          <div class="col-sm-10">
+            <textarea name="description" class="form-control" [(ngModel)]="form.description" required></textarea>
+          </div>
+        </div>
+        <button type="submit" class="btn btn-primary" [disabled]="!movieForm.valid" >Edit</button>
+      </form>
+    </div>
+  </div>
+</div>
+

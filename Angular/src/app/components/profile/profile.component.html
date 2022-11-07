@@ -1,0 +1,18 @@
+<a routerLink="/addMovie" class="btn btn-sm btn-primary">Add New Movie</a>
+
+
+<div class="container">
+  <h2>My Favorite Movies</h2>
+  <div class="card" *ngFor="let movie of movies">
+    <img *ngIf="movie.image!=null" src="http://127.0.0.1:8000{{movie.image}}" alt="Avatar" style="width:250px;height:250px;">
+    <img *ngIf="movie.image==null" src="https://cdn.sstatic.net/Img/unified/sprites.svg?v=e5e58ae7df45" alt="Avatar" style="width:250px;height:250px;">
+    <div class="container">
+      <h4><b>Title:{{movie.title}}</b></h4>
+      <p>Rate:{{movie.rate}}</p>
+      <p>Description:{{movie.description}}</p>
+      <a class="btn btn-danger" (click)="deleteMovie(movie.id)">Delete</a>
+      <a class="btn btn-success" routerLink="edit/{{movie.id}}">Edit</a>
+    </div>
+  </div>
+
+</div>
